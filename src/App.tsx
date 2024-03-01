@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { Comments } from './components/Comments/Comments';
+import { Cars } from './components/Cars/Cars';
 
 type DataPropsType = {
   id?: number,
@@ -9,7 +10,11 @@ type DataPropsType = {
   body?: string,
   // postId?: number
 }
-
+const topCars = [
+  {manufacturer:'BMW', model:'m5cs'},
+  {manufacturer:'Mercedes', model:'e63s'},
+  {manufacturer:'Audi', model:'rs6'}
+]
 
 
 const App: React.FC<DataPropsType> = (props) => {
@@ -27,6 +32,7 @@ const App: React.FC<DataPropsType> = (props) => {
   return (
     <>
       <Comments comments={comments}/>
+      <Cars topCars={topCars}/>
     </>
   )
 }
