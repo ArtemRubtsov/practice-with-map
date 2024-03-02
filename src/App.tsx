@@ -4,6 +4,7 @@ import { Comments } from './components/Comments/Comments';
 import { Cars } from './components/Cars/Cars';
 import { Button } from './components/Button/Button';
 import { SmartButton, SmartDifButton } from './components/SmartButton/SmartButton,';
+import { Money } from './components/Money/Money';
 
 type DataPropsType = {
   id?: number,
@@ -51,6 +52,7 @@ const App: React.FC<DataPropsType> = (props) => {
       <SmartDifButton callback={() => button1Foo('i created in cars - my name button1Foo', 21)} name="SmatBtnDif"/>
       <SmartDifButton callback={() => button2Foo('i created in cars - my name button2Foo')} name="SmatBtnDif"/>
       <SmartDifButton  callback={Button3Foo} name="StuppidBtn"/>
+      <Money />
       <Comments comments={comments}/>
     </>
   )

@@ -3,9 +3,13 @@
   padding: 0 15px;
   box-sizing: border-box;
   max-width: 1170px;
+  list-style: none;
 }
 
-
+ul{
+  text-align: center;
+  margin: 50px 0;
+}
 .App {
   text-align: center;
 }
@@ -35,7 +39,12 @@
 .App-link {
   color: #61dafb;
 }
-
+.buttonMoney {
+  text-align: center;
+}
+button{
+  margin: 10px;
+}
 table {
   border-collapse: collapse;
   border: 2px solid rgb(140 140 140);

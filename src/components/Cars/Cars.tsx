@@ -24,9 +24,9 @@ export const Cars: React.FC<CarsPropsType> = (props: CarsPropsType) => {
             <tbody>
                     {props.topCars.map((manufacturer, index) => {
                         return (
-                            <tr>
-                            <th key={index} scope="col">{manufacturer.manufacturer}</th>
-                            <td>{manufacturer.model}</td>
+                            <tr key={index}>
+                                <th  scope="col">{manufacturer.manufacturer}</th>
+                                <td>{manufacturer.model}</td>
                             </tr>
                         )
                     })}
