@@ -1,5 +1,4 @@
 
-
 type CarsType = {
     manufacturer?: string,
     model?: string
