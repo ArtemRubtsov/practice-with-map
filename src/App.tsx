@@ -31,8 +31,8 @@ const App: React.FC<DataPropsType> = (props) => {
 
   return (
     <>
-      <Comments comments={comments}/>
       <Cars topCars={topCars}/>
+      <Comments comments={comments}/>
     </>
   )
 }
